@@ -1,4 +1,4 @@
-fetch("/usuario-logado")
+fetch("/auth/usuario-logado")
   .then(res => res.json())
   .then(dados => {
     if (!dados.logado) {
