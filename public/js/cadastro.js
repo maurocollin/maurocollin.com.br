@@ -18,7 +18,7 @@ document.getElementById("formCadastro").addEventListener("submit", async functio
   }
 
   try {
-    const resposta = await fetch("http://localhost:3000/cadastrar", {
+    const resposta = await fetch("/auth/cadastrar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, email, senha })

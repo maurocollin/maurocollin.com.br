@@ -6,7 +6,7 @@ document.getElementById("formLogin").addEventListener("submit", async function (
   const mensagem = document.getElementById("mensagem");
 
   try {
-    const resposta = await fetch("/login", {
+    const resposta = await fetch("/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, senha })
